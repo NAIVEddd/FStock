@@ -1,0 +1,13 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+!StocksData
+/StocksData/*
+!/StocksData/stock_codes.csv
+!/StocksData/sh.600000.csv
+!/StocksData/sh.601825.csv
+!/StocksData/sh.601880.csv
+/**/bin
+/**/obj
+/.vs

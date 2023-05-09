@@ -1,0 +1,6 @@
+Use ILGPU(cuda) to calculate stock indicators
+
+-----------
+Current state:
+    `Boll` and `BollRange` available, but only correct when single thread...(cause cuda kernel have bank conflicts)
+    Speed is slow, 'one check/one stock' on 5500 stocks cost about 7 minutes(single thread).
