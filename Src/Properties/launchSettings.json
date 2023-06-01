@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FStock": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)"
+    }
+  }
+}

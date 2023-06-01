@@ -7,6 +7,7 @@ type Order =
     | Sell of StockCode * Float * int
     | WillBuy of StockCode * string
     | WillSell of StockCode * string
+    | Invalid
 
 type OrderRecord =
     int

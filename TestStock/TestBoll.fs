@@ -75,7 +75,7 @@ type TestBoll () =
         Assert.IsTrue(this.CheckResult(cpuBoll, gpuBoll));
 
     member this.LoadStockData(code : StockCode) =
-        let Stocks = StocksProvider.Load(Path.Combine(StockDataPath, code.CodeDisplay() + ".csv"))
+        let Stocks = StocksProvider.Load(Path.Combine(StockDataPath,"../../../../StocksData/", code.CodeDisplay() + ".csv"))
         Stocks.Rows |> Seq.toArray |> Array.map (fun x -> Float x.Close)
 
     [<TestMethod>]
